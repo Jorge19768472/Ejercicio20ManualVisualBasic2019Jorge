@@ -1,38 +1,11 @@
 ﻿Module Module1
-    Public Class PruebaVecor13
-        Private sueldo() As Integer
-        Public Sub Cargar()
-            Dim cuantosSueldos As Integer
-
-            Console.SetCursorPosition(10, 5)
-            Console.Write("Cuatos Sueldo Vamos a introducior (-1 salir): ")
-            cuantosSueldos = Console.ReadLine
-            If cuantosSueldos = -1 Then
-
-                Borrado()
-                Ejercicio20ManualVisualBasic2019Jorge()
-
-            End If
-            ReDim sueldo(cuantosSueldos)
-            Dim f As Integer
-            For f = 0 To cuantosSueldos
-                Console.SetCursorPosition(10, 7)
-                Console.Write("el Sueldo {0} de {0}: " & f, cuantosSueldos)
-                sueldo(f) = Console.ReadLine
-
-            Next
-
-
-        End Sub
-        Public Sub ordenar()
-
-        End Sub
-    End Class
     Sub Main()
         ' Plantilla Ejercicio20ManualVisualBasic2019Jorge
         ' En esta plantilla tendrás lo basico para crear un menu
         ' con un marco que podras ver como se crear mas rapido lento
         ' segundo aumentes o bajes el valor del for en el metodo Temprizador
+        'codigo recogido de.
+        'http://www.tutorialesprogramacionya.com/visualbasicya/detalleconcepto.php?punto=19&codigo=19&inicio=15
         Ejercicio20ManualVisualBasic2019Jorge()
 
     End Sub
@@ -112,13 +85,62 @@
     End Sub
     Sub Eleccion(opcion)
         ' este codigo distribulle el resto de opcines de codigo
+
+        Dim verdad As Boolean
+
         Select Case opcion
             Case 0
                 Salida()
                 Return
             Case 1
+                Borrado()
+
+                Marco()
+
+                Do
+                    Try
+
+
+
+                        verdad = True
+                        Borrado()
+                        Ejercicio20ManualVisualBasic2019Jorge()
+
+                    Catch ex As Exception
+                        Console.SetCursorPosition(10, 20)
+                        Console.Write(ex.Message)
+                        verdad = False
+
+                    End Try
+
+                Loop Until verdad = True
+
                 ' Aqui meter nuevo codigo
             Case 2
+                Borrado()
+
+                Marco()
+
+                Do
+                    Try
+
+
+
+                        verdad = True
+                        Borrado()
+                        Ejercicio20ManualVisualBasic2019Jorge()
+
+                    Catch ex As Exception
+                        Console.SetCursorPosition(10, 20)
+                        Console.Write(ex.Message)
+                        verdad = False
+
+                    End Try
+
+                Loop Until verdad = True
+
+
+
                 'Aqui metes nevo codigo
 
             Case Else
