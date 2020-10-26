@@ -100,9 +100,12 @@
                 Do
                     Try
 
+                        Console.SetCursorPosition(10, 7)
 
 
-                        verdad = True
+                        Console.ReadKey()
+
+
                         Borrado()
                         Ejercicio20ManualVisualBasic2019Jorge()
 
@@ -123,10 +126,13 @@
 
                 Do
                     Try
-
+                        Console.SetCursorPosition(10, 7)
 
 
                         verdad = True
+                        Console.ReadKey()
+
+
                         Borrado()
                         Ejercicio20ManualVisualBasic2019Jorge()
 
